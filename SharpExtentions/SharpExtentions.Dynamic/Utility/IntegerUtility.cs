@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+/*
+Created by Ramzess (ravillion@mail.ru) 
+*/
 
 namespace SharpExtentions.Dynamic.Utility {
     public static class IntegerUtility {

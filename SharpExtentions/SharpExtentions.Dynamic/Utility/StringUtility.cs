@@ -1,6 +1,10 @@
-﻿using System;
-using System.Text.RegularExpressions;
-using System.Threading;
+﻿using System.Text.RegularExpressions;
+
+/*
+
+Created by Ramzess (ravillion@mail.ru) 
+
+*/
 
 namespace SharpExtentions.Dynamic.Utility {
     /// <summary>
@@ -28,6 +32,11 @@ namespace SharpExtentions.Dynamic.Utility {
             return s.testRegex(EMAIL_REGEX);
         }
 
+        /// <summary>
+        /// The method check for containing domain string
+        /// </summary>
+        /// <param name="_s">string to check for domain</param>
+        /// <returns></returns>
         public static bool isDomain(this string _s) {
             return _s.testRegex(DOMAIN_REGEX);
         }
