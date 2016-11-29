@@ -13,10 +13,10 @@ Method extention library for .net
 
 #Assembly Exploring
 
-AssemblyExplorer.Successors<TInterface> returns all classes implemented from TInterface
+- AssemblyExplorer.Successors<TInterface> returns all classes implemented from TInterface
 
-AssemblyExplorer.NameEnds   returns all classes name ends with.
-AssemblyExplorer.NameEnds<TInterface> return all classes imlemented from TInterface
+- AssemblyExplorer.NameEnds   returns all classes name ends with.
+- AssemblyExplorer.NameEnds<TInterface> return all classes imlemented from TInterface
 
-AssemblyExplorer.NameStarts returns all classes name starts with.
-AssemblyExplorer.NameEnds<TInterface> return all classes imlemented from TInterface with name starts
+- AssemblyExplorer.NameStarts returns all classes name starts with.
+- AssemblyExplorer.NameEnds<TInterface> return all classes imlemented from TInterface with name starts
