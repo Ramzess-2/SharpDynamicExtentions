@@ -54,19 +54,54 @@ namespace SharpExtentions.Dynamic.Utility {
             encoding = encoding ?? Encoding.UTF8;
             return encoding.GetBytes(s);
         }
-
-
+        
+        /// <summary>
+        /// Compute md5 from string
+        /// </summary>
+        /// <returns>Computed string</returns>
         public static string toMd5(this string _s) {
             return Hash(_s, MD5.Create());
         }
 
+        /// <summary>
+        /// Converts string from base64 string
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="encoding"></param>
+        /// <returns></returns>
         public static string fromBase64(this string s, Encoding encoding = null) {
             Encoding _used = encoding ?? Encoding.UTF8;
             return _used.GetString(Convert.FromBase64String(s));
         }
 
+        /// <summary>
+        /// Converts string to base64 string
+        /// </summary>
+        /// <param name="_s"></param>
+        /// <param name="encoding"></param>
+        /// <returns></returns>
         public static string toBase64(this string _s, Encoding encoding = null) {
-            return Convert.ToBase64String(_s.toByteArray(encoding));
+            return _s.toByteArray().toBase64();
+        }
+
+        /// <summary>
+        /// Formats string
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        public static string toFormat(this string s, params object[] args) {
+            return string.Format(s, args);
+        }
+
+        /// <summary>
+        /// Check string is null or empty or whitespace
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public static bool isEmptyOrWhiteSpace(this string s) {
+            if (string.IsNullOrEmpty(s) || string.IsNullOrWhiteSpace(s)) return true;
+            else return false;
         }
 
 

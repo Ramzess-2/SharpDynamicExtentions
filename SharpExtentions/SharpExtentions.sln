@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpExtentions.Dynamic.Net45", "SharpExtentions.Dynamic\SharpExtentions.Dynamic.Net45.csproj", "{FB86B705-ADE9-46D7-8D03-F8D5B0723995}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpExtentions.Dynamic", "SharpExtentions.Dynamic\SharpExtentions.Dynamic.csproj", "{FB86B705-ADE9-46D7-8D03-F8D5B0723995}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpExtentions.Dynamic.Test", "SharpExtentions.Dynamic.Test\SharpExtentions.Dynamic.Test.csproj", "{1D20E619-B8E9-4116-94E2-968F39E2C272}"
 EndProject

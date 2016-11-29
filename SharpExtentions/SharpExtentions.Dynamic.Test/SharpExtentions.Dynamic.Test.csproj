@@ -52,14 +52,20 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Generic\AssemblyExplorerTest.cs" />
+    <Compile Include="Generic\FirstClass.cs" />
+    <Compile Include="Generic\Ancestor.cs" />
+    <Compile Include="Generic\SecondAncestor.cs" />
+    <Compile Include="Generic\SecondClass.cs" />
+    <Compile Include="Generic\Third.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utiltiy\StringTest.cs" />
     <Compile Include="Utiltiy\IntegerTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharpExtentions.Dynamic\SharpExtentions.Dynamic.Net45.csproj">
+    <ProjectReference Include="..\SharpExtentions.Dynamic\SharpExtentions.Dynamic.csproj">
       <Project>{fb86b705-ade9-46d7-8d03-f8d5b0723995}</Project>
-      <Name>SharpExtentions.Dynamic.Net45</Name>
+      <Name>SharpExtentions.Dynamic</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
